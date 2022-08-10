@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>PodPro</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="flex sm:flex-col">
+        <nav class="navbar">
+            <div class="navbar__nav">
+                <ul class="nav__lists">
+                    <li class="nav__list">
+                        <img src="img/logo.png" class="w-20 y-20">
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link active" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                          </svg></a>
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                          </svg></a>
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                          </svg></a>
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                          </svg></a>
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                          </svg></a>
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <section class="main">
+            <div class="header">
+                <div class="header__top">
+                    <div class="top--left">
+                        <button class=""><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 stroke-darkColor" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                          </svg></button>
+                        <input type="search" placeholder="Search For Songs, Artists" class="focus-visible:outline-none">
+                    </div>
+                    <div class="top--right">
+                        <a class="" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                          </svg></a>
+                          <a class="" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                          </svg></a>
+                          <div class="user">
+                              <div class="user__img">
+                                  <img src="img/padcaster.jpg">
+                              </div>
+                              <div class="user__content">
+                                  <h4>Michael Rome</h4>
+                                  <p>mrome@gmail.com</p>
+                              </div>
+                          </div>
+                    </div>
+
+                </div>
+
+                <div class="header__title">
+                    <h1>Discover Podcast</h1>
+                </div>
+            </div>
+            <div class="main__content">
+                <div class="trendWeek">
+                    <div class="trendWeek__title">
+                        <h3>Trending This Week</h3>
+                    </div>
+                    <div class="trendWeek__img">
+                        <img src="img/lake.jpg">
+                        <p class="time">50:00 min</p>
+                        <div class="play">
+                            <h5>Goodlife Project</h5>
+                            <P>ELIZABETH GRBERT</P>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-12" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trendPodcasts">
+                    <div class="trendPodcasts__title">
+                        <h3>Trending Podcasts In</h3>
+                    </div>
+                    <div class="owl__carousel owl-carousel">
+                        <div class="item">
+                            <div class="trendPodcasts__box">
+                                <div class="trendPodcasts__img">
+                                    <img src="img/podcast1.webp">
+                                    <div class="trendPodcasts__icon">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="like" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg></a>
+                                          <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                              </svg>
+                                          </a>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>Earn Your Happy</h6>
+                                </div>
+                                <div class="trendPodcasts__content">
+                                    <p class="trendPodcasts__name">Lohi Harder</p>
+                                    <p class="trendPodcasts__time"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                                      </svg>
+                                    <span>1 hr 50 min</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="trendPodcasts__box">
+                                <div class="trendPodcasts__img">
+                                    <img src="img/podcast2.webp">
+                                    <div class="trendPodcasts__icon">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="like" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg></a>
+                                          <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                              </svg>
+                                          </a>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>The Mind Your Business</h6>
+                                </div>
+                                <div class="trendPodcasts__content">
+                                    <p class="trendPodcasts__name">James Wedmore</p>
+                                    <p class="trendPodcasts__time"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                                      </svg>
+                                    <span>30:25 min</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="trendPodcasts__box">
+                                <div class="trendPodcasts__img">
+                                    <img src="img/podcast3.jpg">
+                                    <div class="trendPodcasts__icon">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="like" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg></a>
+                                          <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                              </svg>
+                                          </a>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6>The Art of Charm</h6>
+                                </div>
+                                <div class="trendPodcasts__content">
+                                    <p class="trendPodcasts__name">As Johney</p>
+                                    <p class="trendPodcasts__time"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                                      </svg>
+                                    <span>58:00 min</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular">
+                    <div class="popularPodcasts">
+                        <div class="popularPodcasts__top">
+                            <div class="popularPodcasts__title">
+                                <h2>Popular Podcasts</h2>
+                            </div>
+                            <ul class="popularPodcasts__tab">
+                                    <li><a class="tab__link">All</a></li>
+                                    <li><a class="tab__link active">Exclusive</a></li>
+                                    <li><a class="tab__link">News and Policities</a></li>
+                                    <li><a class="tab__link">Music</a></li>
+                                    <li><a class="tab__link">Business</a></li>
+                                    <li><a class="tab__link">Health</a></li>
+                            </ul>
+                        </div>
+                        <div class="popularPodcasts__bottom">
+                            <div class="tab__contents">
+                                <div class="tab__content">				
+                                    <div class="owl__carousel owl-carousel">
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular1.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Tom Heart</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>1 hr 20 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular2.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Oliver Burkeman</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>47:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular3.webp">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>The new family</h5>
+                                                    <p>Brande Weikle</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>58:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="tab__content show">				
+                                    <div class="owl__carousel owl-carousel">
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular1.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Tom Heart</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>1 hr 20 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular2.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Oliver Burkeman</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>47:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular3.webp">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>The new family</h5>
+                                                    <p>Brande Weikle</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>58:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="tab__content">				
+                                    <div class="owl__carousel owl-carousel">
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular1.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Tom Heart</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>1 hr 20 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular2.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Oliver Burkeman</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>47:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular3.webp">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>The new family</h5>
+                                                    <p>Brande Weikle</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>58:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="tab__content">				
+                                    <div class="owl__carousel owl-carousel">
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular1.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Tom Heart</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>1 hr 20 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular2.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Oliver Burkeman</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>47:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular3.webp">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>The new family</h5>
+                                                    <p>Brande Weikle</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>58:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="tab__content">				
+                                    <div class="owl__carousel owl-carousel">
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular1.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Tom Heart</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>1 hr 20 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular2.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Oliver Burkeman</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>47:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular3.webp">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>The new family</h5>
+                                                    <p>Brande Weikle</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>58:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="tab__content">				
+                                    <div class="owl__carousel owl-carousel">
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular1.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Tom Heart</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>1 hr 20 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular2.jpg">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>How to face big decision</h5>
+                                                    <p>Oliver Burkeman</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>47:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="popularPodcasts__box">
+                                                <div class="popularPodcasts__img">
+                                                    <img src="img/popular3.webp">
+                                                </div>
+                                                <div class="popularPodcasts__content">
+                                                    <h5>The new family</h5>
+                                                    <p>Brande Weikle</p>
+                                                    <p class="popularPodcasts__time">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                          </svg>
+                                                    <span>58:00 min</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popularCategories">
+                        <div class="popularCategories__title">
+                            <h2>Popular Categories</h2>
+                        </div>
+                        <ul class="popularCategories__wrapper">
+                            <li class="popularCategories__box">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                                  </svg>
+                                <h6>Business</h6>
+                                <p>190 Padcasts</p>
+                            </li>
+                            <li class="popularCategories__box">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                                  </svg>
+                                <h6>Music</h6>
+                                <p>80 Padcasts</p>
+                            </li>
+                            <li class="popularCategories__box">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                                  </svg>
+                                <h6>Education</h6>
+                                <p>153 Padcasts</p>
+                            </li>
+                            <li class="popularCategories__box">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                                  </svg>
+                                <h6>Happiness</h6>
+                                <p>240 Padcasts</p>
+                            </li>
+                            <li class="popularCategories__showAll">
+                                <h6>Show All</h6>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                  </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popularPodcasters">
+                        <div class="popularPodcasters__title">
+                            <h2>Popular Categories</h2>
+                        </div>
+                        <div class="popularPodcasters__box">
+                            <img src="img/padcaster.jpg">
+                            <h6>John Doe</h6>
+                            <p>1245 followers</p>
+                        </div>
+                        <div class="popularPodcasters__box">
+                            <img src="img/padcaster.jpg">
+                            <h6>Michael John</h6>
+                            <p>1126 followers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="side">
+                <div class="now">
+                    <h3>Now Playing</h3>
+                    <img src="img/yoga.jpg">
+                    <h4>Spiritual Awakening</h4>
+                    <p>Dr Erin Fall</p>
+                    <div class="range"></div>
+                    <div class="now__buttons">
+                        <a class="prev__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z"></path>
+                              </svg>
+                        </a>
+                        <a class="play__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                              </svg>
+                        </a>
+                        <a class="next__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z"></path>
+                              </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <ul class="playlist__tabs">
+                        <li>
+                            <a class="playlist__tab">Recently Played</a>
+                        </li>
+                        <li>
+                            <a class="playlist__tab active">My Favourite</a>
+                        </li>
+                    </ul>
+                    <div class="playlist__contents">
+                        <div class="playlist__content">
+                            <div class="playlist__box">
+                                <img class="playlist__img" src="img/podcast3.jpg">
+                                <h6 class="playlist__title">Go Where the Knowldge</h6>
+                                <p class="playlist__name">John S.Shawn</p>
+                                <p class="playlist__time">53:00 min</p>
+                            </div>
+                            <div class="playlist__box">
+                                <img class="playlist__img" src="img/podcast1.webp">
+                                <h6 class="playlist__title">Go Where the Knowldge</h6>
+                                <p class="playlist__name">John S.Shawn</p>
+                                <p class="playlist__time">53:00 min</p>
+                            </div>
+                            <div class="playlist__box">
+                                <img class="playlist__img" src="img/popular2.jpg">
+                                <h6 class="playlist__title">Go Where the Knowldge</h6>
+                                <p class="playlist__name">John S.Shawn</p>
+                                <p class="playlist__time">53:00 min</p>
+                            </div>
+                            <div class="playlist__box">
+                                <img class="playlist__img" src="img/popular1.jpg">
+                                <h6 class="playlist__title">Go Where the Knowldge</h6>
+                                <p class="playlist__name">John S.Shawn</p>
+                                <p class="playlist__time">53:00 min</p>
+                            </div>
+                        </div>
+                        <div class="playlist__content show">
+                            <div class="playlist__box">
+                                <img class="playlist__img" src="img/podcast1.webp">
+                                <h6 class="playlist__title">Go Where the Knowldge</h6>
+                                <p class="playlist__name">John S.Shawn</p>
+                                <p class="playlist__time">53:00 min</p>
+                            </div>
+                            <div class="playlist__box">
+                                <img class="playlist__img" src="img/podcast3.jpg">
+                                <h6 class="playlist__title">Go Where the Knowldge</h6>
+                                <p class="playlist__name">John S.Shawn</p>
+                                <p class="playlist__time">53:00 min</p>
+                            </div>
+                            <div class="playlist__box">
+                                <img class="playlist__img" src="img/popular1.jpg">
+                                <h6 class="playlist__title">Go Where the Knowldge</h6>
+                                <p class="playlist__name">John S.Shawn</p>
+                                <p class="playlist__time">53:00 min</p>
+                            </div>
+                            <div class="playlist__box">
+                                <img class="playlist__img" src="img/popular2.jpg">
+                                <h6 class="playlist__title">Go Where the Knowldge</h6>
+                                <p class="playlist__name">John S.Shawn</p>
+                                <p class="playlist__time">53:00 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </section>
+
+
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
