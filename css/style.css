@@ -426,7 +426,7 @@ h1 {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
   h1 {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -490,6 +490,36 @@ body {
 
 a {
   cursor: pointer;
+}
+
+.btn {
+  margin: auto;
+  display: block;
+  border-radius: 0.375rem;
+  border-style: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: inherit;
+  outline-width: 0px;
+  transition-duration: 300ms;
+}
+
+.btn__primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 250 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(13 33 57 / var(--tw-text-opacity));
+}
+
+.btn__primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 33 57 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -635,7 +665,7 @@ a {
 
 .main {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   row-gap: 4rem;
@@ -646,6 +676,7 @@ a {
   .main {
     justify-items: center;
     row-gap: 2rem;
+    padding: 2rem;
   }
 }
 
@@ -655,19 +686,22 @@ a {
 
 .side {
   grid-column: span 1 / span 1;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 @media (max-width: 576px) {
   .side {
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
   }
 }
 
 @media (max-width: 1199px) {
   .side {
     grid-column: 1 / -1;
-    display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr));
     gap: 2rem;
   }
 }
@@ -751,7 +785,7 @@ a {
 }
 
 .main__content {
-  grid-column: span 4 / span 4;
+  grid-column: span 3 / span 3;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
@@ -783,7 +817,7 @@ a {
 @media (max-width: 768px) {
   .trendWeek {
     grid-column: 1 / -1;
-    padding: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -924,7 +958,9 @@ a {
 .popular {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   border-radius: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -981,6 +1017,7 @@ a {
 
 @media (max-width: 768px) {
   .tab__link {
+    white-space: nowrap;
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
@@ -1017,11 +1054,18 @@ a {
 }
 
 .popularPodcasts__box {
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  row-gap: 0px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
-.popularPodcasts__img img {
+.popularPodcasts__img {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
   height: 6rem;
   width: 6rem !important;
   border-radius: 1rem;
@@ -1029,15 +1073,28 @@ a {
      object-fit: cover;
 }
 
+.popularPodcasts__box h5 {
+  grid-column: span 4 / span 4;
+  grid-row: span 1 / span 1;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+.popularPodcasts__box p {
+  grid-column: span 4 / span 4;
+  grid-row: span 1 / span 1;
+}
+
 .popularPodcasts__time {
-  margin-top: 0.5rem;
   display: flex;
-  width: 9rem;
+  width: 8rem;
+  align-items: center;
   gap: 0.5rem;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(245 246 250 / var(--tw-bg-opacity));
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .popularPodcasts__time svg {
@@ -1045,7 +1102,7 @@ a {
 }
 
 .popularCategories {
-  grid-column: span 3 / span 3;
+  grid-column: span 2 / span 2;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -1058,7 +1115,7 @@ a {
 
 .popularCategories__wrapper {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   padding-top: 2rem;
 }
 
@@ -1066,6 +1123,13 @@ a {
   .popularCategories__wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .popularCategories__wrapper {
+    gap: 4rem;
   }
 }
 
@@ -1123,8 +1187,6 @@ a {
 }
 
 .popularPodcasters {
-  grid-column-start: 4;
-  grid-column-end: 5;
   padding-top: 2rem;
 }
 
@@ -1139,16 +1201,33 @@ a {
 }
 
 .popularPodcasters__box {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   align-items: center;
-  gap: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
+@media (max-width: 576px) {
+  .popularPodcasters__box {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .popularPodcasters__box {
+    width: 20rem;
+  }
+}
+
 .popularPodcasters__box img {
+  grid-column: span 1 / span 1;
   width: 2rem;
   border-radius: 9999px;
+}
+
+.popularPodcasters__box h6,  .popularPodcasters__box p {
+  grid-column: span 2 / span 2;
 }
 
 .now {
@@ -1228,6 +1307,7 @@ a {
 }
 
 .playlist {
+  position: relative;
   margin-top: 2rem;
   border-radius: 1rem;
   --tw-bg-opacity: 1;
@@ -1248,15 +1328,11 @@ a {
   }
 }
 
-.playlist {
-  min-height: 25rem
-}
-
 .playlist__tabs {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .playlist__tab {
@@ -1281,10 +1357,6 @@ a {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.playlist__contents {
-  position: relative;
-}
-
 .playlist__content {
   visibility: hidden;
   position: absolute;
@@ -1302,6 +1374,14 @@ a {
   padding-bottom: 0.75rem;
 }
 
+@media (max-width: 415px) {
+  .playlist__box {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
 .playlist__img {
   grid-column: span 1 / span 1;
   grid-row: span 2 / span 2;
@@ -1316,6 +1396,12 @@ a {
   grid-row: span 1 / span 1;
 }
 
+@media (max-width: 415px) {
+  .playlist__title {
+    grid-column: span 3 / span 3;
+  }
+}
+
 .playlist__name {
   grid-column: span 2 / span 2;
   grid-row: span 1 / span 1;
@@ -1323,9 +1409,9 @@ a {
   line-height: 1rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 415px) {
   .playlist__name {
-    grid-column: span 3 / span 3;
+    grid-column: span 2 / span 2;
   }
 }
 
@@ -1336,7 +1422,7 @@ a {
   line-height: 1rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 415px) {
   .playlist__time {
     grid-column: span 1 / span 1;
   }
@@ -1386,6 +1472,10 @@ a {
   background-color: rgb(13 33 57 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.owl-dots,  .owl-nav {
+  display: none;
 }
 
 .visible {
